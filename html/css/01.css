@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.html01 {
+  margin: 20px auto;
+  width: 70%;
+}
+.table01,
+th,
+td {
+  border: 1px solid pink;
+  text-align: center;
+  border-collapse: collapse; /* *去表格重合线 */
+  /* 合并:rowspan(垂直合并),colspan(水平合并),并删除多余单元格*/
+}
+thead {
+  border-bottom:4px double pink;/* @等于4/3px */
+}
+dl{
+  float: left;
+  margin-left: 10px
+}
