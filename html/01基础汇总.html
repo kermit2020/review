@@ -150,7 +150,7 @@
     <form action="url" method="POST" name="表单名" enctype="application/x-www-form-urlencoded">
       <input type="hidden" name="id" value="id1">
       <label for="idUser"><span>用户名:</span></label>
-      <input type="text" placeholder="填入账户" name="username" id="idUser">
+      <input type="text" placeholder="填入账户" name="username" id="idUser"><br>
       <label for="idPsd"><span>密码:</span></label>
       <input type="password" placeholder="填入密码" name="psd" id="idPsd">
       <div>
@@ -188,6 +188,17 @@
     <!-- 按钮 -->
     <button>按钮</button>
 
+
+    <!-- 脚本排序-->
+    <script>
+      window.onload = function () {
+        console.log(4)
+      }
+    </script>
+    <script>alert('阻塞脚本\n 以下的脚本根据属性情况进行加载')</script>
+    <script defer>console.log(3)</script>
+    <script>console.log(2)</script>
+    <script async>console.log(1)</script>
 
 
 </body>
