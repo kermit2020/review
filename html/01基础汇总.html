@@ -50,17 +50,29 @@
     <hr>分割线
 
 
-    <!-- 特殊字符 -->
+    <!--& 特殊字符 -->
     &gt;大于 &lt;小于 &amp; &nbsp; &yen;
     <!-- 图片 (补:图片不可拖动设置)--><br>
     <img src="链接地址" alt="错误提示" title="经过提示" draggable="false">
-    <!-- 链接/下载 --><br>
+
+
+    <!--a 链接/下载/锚点 --><br>
     <a href="javascript:;" target="_blank">新页面打开</a>
     <p>点击下载//download=下载后名字</p>
     <a href="./img/w3logo_logo.gif" download="w3图标"><img src="./img/w3logo_logo.gif" alt=""></a>
+    <br>
+    <a href="#anchor">锚点</a><!-- 记得添加 #和 "" 号！非常重要！-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="anchor"> 被锚点位置调到页面顶部</div>
     <hr>
-    <!-- 表格 -->
 
+    
+    <!--table 表格 -->
     <table style="border: 1px solid pink;" class="table01" cellpadding="10px" cellspacing="0">
       <h3 align="center">课程表格</h3>
       <thead>
@@ -118,8 +130,8 @@
     <!-- 列表 -->
     <ul>
       <li>无序列表</li>
-      <li></li>
-      <li></li>
+      <li>西瓜</li>
+      <li>香蕉</li>
     </ul>
     <ol>
       <li>有序列表</li>
@@ -187,6 +199,9 @@
     <hr>
     <!-- 按钮 -->
     <button>按钮</button>
+    <!-- 视频,音频 --><br>
+    <audio src=""></audio>
+    <video src=""></video>
 
 
     <!-- 脚本排序-->
