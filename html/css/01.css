@@ -33,7 +33,7 @@ color/font/text-decoration/text-align文字水平/vertical-align:middle文字和
 行内样式align="center"
 5.css3
 content/cusor/border-radius/box-shadow/text-shadow/
-animation动画特效
+6.animation动画特效
 
 */
 /*? 1.通用布局 */
@@ -138,6 +138,92 @@ background-position:50px 100px;左上角向右 50 像素、向下 100 像素的�
 background-attachment:fixed;//防止背景跟随滚动 background-attachment 属性的默认值是 scroll
 ==================================================
  */
-a {
-  background:
+/* ? 4.文本属性 
+color/font/text-decoration/text-align文字水平/vertical-align:middle文字和图片垂直居中
+==================================================
+font:font-style font-variant font-weight font-size/line-height font-family[font-size和font-family的值是必需的]
+font:italic bold 12px/30px[行间距] Georgia, serif;
+
+font-style:italic斜体/oblique斜体
+font-variant:small-caps小型大写/normal;
+font-weight:bold或bolder/lighter/normal/500-900;
+font-size:26px;line-height:26px;
+font-family:'Microsoft YaHei', 微软雅黑, 'MicrosoftJhengHei', 华文细黑, STHeiti, MingLiu; 
+
+[文字和图片垂直方位]
+vertical-align:text-top/text-bottom和baseline默认一样/middle/-webkit-baseline-middle[都不正];
+sub/super下标,上标
+-90%/-14px/-1em;[用这个对齐]
+==================================================
+*/
+/* ?5.css3
+content/cusor/border-radius/box-shadow/text-shadow/
+==================================================
+object.style.content="url(beep.wav)"
+a:after
+  {
+  content: "url(beep.wav)"[" (" attr(href) ")"];
+  }
+
+
+[默认]cusor:auto/default   
+[左右方位箭头]cusor:e[s]-resize/n[s]-resize/ne[sw]-resize/nw[se]-resize
+[常用]cusor:pointer手指/move[移动]/crosshair[十字]/text/help
+[加载]cusor:wait/progress
+
+box-shadow: 10px 10px 5px #888888;
+box-shadow: h-shadow[x必须] v-shadow[y必须] blur[模糊距离] spread[阴影大小] color inset[内];
+[阴影大小]spread用这可以做光源z轴移动特效
+==================================================
+*/
+/* ? 6.animation动画特效
+==================================================
+transform (2D)ie10+
+transform (3D)ie12+
+transform:rotate(7deg);
+-ms-transform:rotate(7deg);  //IE 9 
+-webkit-transform: rotate(7deg); // Safari and Chrome 
+
+属性https://c.runoob.com/codedemo/3391
+none	定义不进行转换。
+matrix(n,n,n,n,n,n)	定义 2D 转换，使用六个值的矩阵。
+matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)	定义 3D 转换，使用 16 个值的 4x4 矩阵。
+[]translate(x,y)	定义 2D 转换。
+[]translate3d(x,y,z)	定义 3D 转换。
+[]translateX(x)	定义转换，只是用 X 轴的值。
+translateY(y)	定义转换，只是用 Y 轴的值。
+translateZ(z)	定义 3D 转换，只是用 Z 轴的值。
+[]scale(x[,y]?)	定义 2D 缩放转换。
+[]scale3d(x,y,z)	定义 3D 缩放转换。
+[]scaleX(x)	通过设置 X 轴的值来定义缩放转换。
+scaleY(y)	通过设置 Y 轴的值来定义缩放转换。
+scaleZ(z)	通过设置 Z 轴的值来定义 3D 缩放转换。
+[]rotate(angle)	定义 2D 旋转，在参数中规定角度。
+[]rotate3d(x,y,z,angle)	定义 3D 旋转。
+[]rotateX(angle)	定义沿着 X 轴的 3D 旋转。
+rotateY(angle)	定义沿着 Y 轴的 3D 旋转。
+rotateZ(angle)	定义沿着 Z 轴的 3D 旋转。
+skew(x-angle,y-angle)	定义沿着 X 和 Y 轴的 2D 倾斜转换。
+skewX(angle)	定义沿着 X 轴的 2D 倾斜转换。
+skewY(angle)	定义沿着 Y 轴的 2D 倾斜转换。
+[]perspective(n)	为 3D 转换元素定义透视视图。
+[]transform-origin:20% 40%;  //旋转起点
+-ms-transform-origin:20% 40%; //IE 9
+-webkit-transform-origin:20% 40%; //Safari and Chrome
+transform-style: preserve-3d;
+-webkit-transform-style: preserve-3d; //only Safari and Chrome 
+主配置
+.card .box .fill {
+  opacity: .5;
+  box-shadow: 0 0 5px #ccc;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+子配置
+ .rotate:hover .fill {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+================================================== */ a {
+  vertical-align: ;
 }
