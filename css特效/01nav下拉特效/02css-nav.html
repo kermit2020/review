@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css-01导航栏下拉特效</title>
+  <say>
+    a:link {color: #FF0000} /* 未访问的链接 */
+    a:visited {color: #00FF00} /* 已访问的链接 */
+    a:hover {color: #FF00FF} /* 当有鼠标悬停在链接上 */
+    a:active {color: #0000FF} /* 被选择的链接 */ </say>
+  <style>
+    .hovertree-menu {
+      position: relative;
+      overflow: visible;
+      zoom: 1;
+      width: 970px;
+      height: 50px;
+      margin: 0 auto;
+      padding: 0;
+      background: url(bg-frame.png) no-repeat left top;
+      line-height: 1.5;
+      font-size: 12px;
+    }
+
+    .hovertree-menu ul {
+      position: absolute;
+      z-index: 98;
+      top: 7px;
+      left: 10px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .hovertree-menu ul li {
+      float: left;
+      list-style: none outside;
+      width: 110px;
+    }
+
+    .hovertree-menu ul li a:link,
+    .hovertree-menu ul li a:visited {
+      display: block;
+      margin: 0;
+      padding: 8px 0 0 0;
+      *padding: 10px 0 0 0;
+      /* ie7 */
+      text-align: center;
+      font-size: 13px;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .hovertree-menu ul li a:hover {
+      height: 109px;
+      *height: 107px;
+      color: #AB6A00;
+      background: url(bg-frame.png) no-repeat left -50px;
+    }
+
+    .hovertree-menu ul li a div {
+      display: none;
+      padding: 10px 5px 0 5px;
+      margin: 0;
+      text-align: left;
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    .hovertree-menu ul li a:hover div.info {
+      display: block;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hovertree-menu">
+    <ul>
+      <li> <a href="//hovertree.com/menu/jquery/">
+          jQuery
+          <div class="info">学习jQuery的好地方，从入门到精通，资料大全。</div>
+        </a> </li>
+      <li> <a href="//hovertree.com/texiao/">
+          网页特效
+          <div class="info">各种网页特效，jQuery，JS，CSS，HTML5等等。。。</div>
+        </a> </li>
+      <li> <a href="//hovertree.com/menu/aspnet/">
+          ASP.NET
+          <div class="info">ASP.NET 资料库，代码大全。</div>
+        </a> </li>
+      <li> <a href="//hovertree.com/hvtart/bjae/1d2c278a117f94ca.htm">
+          jQuery下载
+          <div class="info">各个版本的jQuery下载。</div>
+        </a> </li>
+      <li> <a href="//hovertree.com/hvtart/bjae/009i1gl6.htm">
+          相关菜单
+          <div class="info">纯CSS带说明菜单，另一种风格。</div>
+        </a> </li>
+      <li> <a href="//hovertree.com/menu/javascript/">
+          JS代码
+          <div class="info">格式各样的JavaScript代码供你参考。</div>
+        </a> </li>
+      <li> <a href="http://keleyi.com/">柯乐义
+          <div class="info">Web前端资料，jQuery，HTML5等。</div>
+        </a> </li>
+    </ul>
+  </div>
+</body>
+
+</html>
