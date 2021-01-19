@@ -174,10 +174,15 @@ a:after
 box-shadow: 10px 10px 5px #888888;
 box-shadow: h-shadow[x必须] v-shadow[y必须] blur[模糊距离] spread[阴影大小] color inset[内];
 [阴影大小]spread用这可以做光源z轴移动特效
+
+text-shadow:0 0 3px #FF0000;
+text-shadow: h-shadow v-shadow blur color;
 ==================================================
 */
 /* ? 6.animation动画特效
 ==================================================
+1.[transtion,transform 转化用法]
+
 transform (2D)ie10+
 transform (3D)ie12+
 transform:rotate(7deg);
@@ -210,7 +215,7 @@ skewY(angle)	定义沿着 Y 轴的 2D 倾斜转换。
 []transform-origin:20% 40%;  //旋转起点
 -ms-transform-origin:20% 40%; //IE 9
 -webkit-transform-origin:20% 40%; //Safari and Chrome
-transform-style: preserve-3d;
+[]transform-style: preserve-3d;
 -webkit-transform-style: preserve-3d; //only Safari and Chrome 
 主配置
 .card .box .fill {
@@ -218,12 +223,31 @@ transform-style: preserve-3d;
   box-shadow: 0 0 5px #ccc;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  [transition主要包含四个属性值：执行变换的属性：transition-property:none | all | width,变换延续的时间：transition-duration,在延续时间段，变换的速率变化transition-timing-function:ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier(x1,y1 ,x2 ,y2 ),变换延迟时间transition-delay]
+  [可多个]transition: background 0.5s ease-in,color 0.3s ease-out;
+  
 }
 子配置
  .rotate:hover .fill {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-================================================== */ a {
+
+2.[animation动画]
+	object.style.animation="mymove 5s infinite"
+animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+https://www.runoob.com/cssref/css3-pr-animation.html
+
+animation: rightTwo 8s linear infinite;
+@keyframes rightTwo {
+    0%{transform: rotate(45deg);}
+
+    50%,
+    100% {
+      transform: rotate(225deg);
+    }
+  }
+================================================== */
+a {
   vertical-align: ;
 }

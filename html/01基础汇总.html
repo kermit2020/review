@@ -71,7 +71,7 @@
     <div id="anchor"> 被锚点位置调到页面顶部</div>
     <hr>
 
-    
+
     <!--table 表格 -->
     <table style="border: 1px solid pink;" class="table01" cellpadding="10px" cellspacing="0">
       <h3 align="center">课程表格</h3>
@@ -199,9 +199,22 @@
     <hr>
     <!-- 按钮 -->
     <button>按钮</button>
-    <!-- 视频,音频 --><br>
-    <audio src=""></audio>
-    <video src=""></video>
+    <!-- 音频 自动播放 控制器 循环 静音 页面预加载[会被自动播放取代] js部分audio.play() audio.paulse()--><br>
+    <audio autoplay controls loop muted preload>
+      <source src=".mp3" type="audio/mpeg">一般</source>
+      <source src=".mp3" type="audio/ogg">火狐</source>
+      您的浏览器不支持 audio 标签。IE9
+    </audio>
+    <!-- h5新标签 -->
+    <embed></embed>
+    <object data=".mp3" type=""></object>
+    <a href="horse.mp3">Play the sound</a>
+    <!-- 视频 --><br>
+    <video width="320" height="240" controls>
+      <source src="movie.mp4" type="video/mp4">
+      <source src="movie.ogg" type="video/ogg">
+      您的浏览器不支持 video 标签。
+    </video>
 
 
     <!-- 脚本排序-->
