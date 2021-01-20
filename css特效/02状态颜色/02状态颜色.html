@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>状态颜色-变更</title>
+  <style>
+    
+    .focushovertree a:link {
+      color: blue;
+    }
+
+    .focushovertree a:visited {
+      color: green;
+    }
+
+    .focushovertree a:hover {
+      color: red;
+    }
+
+    .focushovertree a:focus {
+      color: black;
+    }
+
+    .focushovertree a:active {
+      color: yellow;
+    }
+
+    .focushovertree input:focus {
+      background: yellow;
+    }
+
+    .focushovertree input:active {
+      background: red;
+    }
+
+    .hvtholder {
+      width: 789px;
+      margin: 0px auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hvtholder">
+    点击以下链接和文本框查看效果，也可以试试Tab键<br><br>
+    <div class="focushovertree">
+      <a href="//hovertree.com/texiao/css/11.htm#urlhovertree" target="_self">本页锚点链接</a> <a
+        href="//hovertree.com/texiao/css/11.htm" target="_self">本页无锚点链接</a><br><br>
+      <a href="javascript:;">点击我，永远未访问 </a><br><br>
+      <a href="//hovertree.com/">首页</a> <a href="//hovertree.com/texiao/">特效</a>
+      <a href="//hovertree.com/menu/css/">CSS</a> <a href="//hovertree.com/menu/html5/">HTML5</a>
+      <a href="http://tool.hovertree.com/info/ip/">查看IP</a>
+      <a href="//hovertree.com/hvtart/bjae/v8e7w4u1.htm">原文</a>
+      <a href="//hovertree.com/texiao/keleyi/">keleyi菜单</a>
+      <a href="//hovertree.com/map/">导航</a>
+      <br><br>
+      <input type="text" id="txthovertree" value="kermit酱"><br><br>
+      <input type="text" id="urlhovertree" value="先按下鼠标再放开">
+      <br><br>
+      链接：未访问 蓝色，访问过 绿色，光标悬停 红色，鼠标按下未放开 黄色， 鼠标按下后松开 黑色。
+      <br>文本框：鼠标按下 红色，松开 黄色。
+      <div class="say">
+        <p>a:link {color: #FF0000} /* 未访问的链接 */</p>
+        <p>a:visited {color: #00FF00} /* 已访问的链接 */</p>
+        <p>a:hover {color: #FF00FF} /* 当有鼠标悬停在链接上 */</p>
+        <p>a:active {color: #0000FF} /* 被选择的链接 */ </p>
+      </div>
+    </div>
+
+  </div>
+  
+</body>
+
+</html>

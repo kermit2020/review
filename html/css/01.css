@@ -117,6 +117,13 @@ border-top-style
 border-top/right/bottom/left
 border-width:0 2px 1px 4px;
 border: medium double rgb(250,0,255);border-width:10px;//medium默认媒介省略px
+
+style="border:thin solid red"；//这细线比正常1px宽
+边框线的宽度有三个标准值：thin（细线）、medium（中粗线）和thick（粗线），
+此外，也可以自定义宽度，如：1pt、5px、2cm等。
+边框线的类型有九个已确定值：none（无边框线）、 dotted（由点一组的虚线）、 dashed（由短线构成的虚线）、 solid（实线）、 double（双线，双线宽度受制于它们之间的空白部分的宽度就也就是说border-width定义的宽度）、 groove（3D沟槽状的边框）、 ridge（3D脊状的边框）、 inset（3D嵌入边框，颜色较深）、 outset（3D外雕花边框，颜色较厚），
+特别注意：如果系统不全力支持这些边框的属性值，那么“dotted”、“dashed”、“double”、“groove”、“ridge”、“inset”和“outset”都会被“solid”替换成。
+
 [三角之美]
 - border:10px solid
 - border-color:transparent transparent #fff transparent;上,右,下,左(这是一个朝上的三角形)
