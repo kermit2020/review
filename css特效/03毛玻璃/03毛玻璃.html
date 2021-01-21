@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+  <title>浴室-毛玻璃</title>
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      margin: 20px auto;
+    }
+
+    .frosted-glass {
+      width: 220px;
+      height: 300px;
+      margin: auto;
+      /* background: inherit; */
+      background: orange url("沐浴女.jpg") no-repeat scroll center center/204px 267px;
+      text-align: center;
+      /* background-size: auto;
+      background-repeat: no-repeat;
+      background-image: url("沐浴女.jpg");
+      padding: 10%;
+      -webkit-filter: blur(1.7px);
+      -moz-filter: blur(1.7px);
+      -ms-filter: blur(1.7px);
+      -o-filter: blur(1.7px); */
+      filter: blur(1.7px);
+      /* ie6~9 */
+      filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=1.7, MakeShadow=flase);
+      /* 在css样式代码里设置，这是一种模糊的滤镜效果，作用于图像上使之模糊。 makeshadow设置对象的内容是否被处容理为阴影，makeshadow=false意为将产生阴影的效果，pixelradius参数是设置模糊效果的作用深度。 */
+
+    }
+
+    .frosted-glass-hovertree {
+      width: 466px;
+      height: 284px;
+      background: inherit;
+      -webkit-filter: blur(5px);
+      -moz-filter: blur(5px);
+      -ms-filter: blur(5px);
+      -o-filter: blur(5px);
+      filter: blur(5px);
+      filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=4, MakeShadow=false);
+    }
+
+
+
+    /* .frosted-glass::after{
+    content: "";
+            display: block;           
+  } */
+  </style>
+</head>
+
+<body>
+  <p align="center" style="margin-top: 20px;">毛玻璃文字效果</p>
+  <div class="frosted-glass" draggable="false">毛玻璃文字效果</div>
+</body>
+
+</html>

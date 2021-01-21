@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS3 可爱的圣诞小屋 冒烟的烟囱</title>
+<style>
+.contener_gener {
+    padding: 270px 20px 20px 20px;
+    position: relative;
+    background-color: #2c5871;
+}
+.contener_home_one {
+    width: 150px;
+    height: 76px;
+    position: relative;
+    z-index: 0;
+}
+.home_base {
+    position: absolute;
+    bottom: 0px;
+    background-color: #d75f3d;
+    width: 125px;
+    left: 14px;
+    height: 40px;
+}
+.triangle {
+    left: 8px;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 36px solid #fff;
+}
+.parallelogram {
+    left: 34px;
+    position: absolute;
+    width: 102px;
+    height: 36px;
+    -webkit-transform: skew(26deg);
+    -moz-transform: skew(26deg);
+    -ms-transform: skew(26deg);
+    transform: skew(26deg);
+    background-color: #fff;
+}
+.door {
+    background-color: #742e1a;
+    z-index: 1;
+    width: 15px;
+    height: 25px;
+    position: absolute;
+    bottom: 0px;
+    left: 22px;
+}
+.window_one {
+    background-color: #f9eb32;
+    z-index: 1;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: 10px;
+    left: 55px;
+    -webkit-animation: light 1.8s linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: light 1.8s linear;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation: light 1.8s linear;
+    -ms-animation-iteration-count: infinite;
+    animation: light 1.8s linear;
+    animation-iteration-count: infinite;
+}
+.window_two {
+    background-color: #f9eb32;
+    z-index: 1;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: 10px;
+    left: 95px;
+    -webkit-animation: light 1.4s linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: light 1.4s linear;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation: light 1.4s linear;
+    -ms-animation-iteration-count: infinite;
+    animation: light 1.4s linear;
+    animation-iteration-count: infinite;
+}
+.christmas_tree {
+    right: -20px;
+    position: absolute;
+    bottom: 0px;
+    width: 0px;
+    height: 0px;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 70px solid #97bf0d;
+}
+.christmas_ball {
+    background-color: #cb2025;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.christmas_ball_1 {
+    left: -8px;
+    top: 10px;
+}
+.christmas_ball_2 {
+    left: 3px;
+    top: 25px;
+}
+.christmas_ball_3 {
+    left: -13px;
+    top: 40px;
+}
+.christmas_ball_4 {
+    left: 9px;
+    top: 50px;
+}
+.mountain_one {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 0px;
+    height: 0px;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    border-bottom: 220px solid #1c4156;
+}
+.sub_mountain_one {
+    position: absolute;
+    top: 0px;
+    left: -30px;
+    z-index: -1;
+    width: 0px;
+    height: 0px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 40px solid #4f7286;
+}
+.sub_mountain_two {
+    position: absolute;
+    top: 0px;
+    left: -20px;
+    z-index: -1;
+    width: 0px;
+    height: 0px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid #4f7286;
+}
+.mountain_two {
+    position: absolute;
+    left: -175px;
+    bottom: 0;
+    z-index: -1;
+    width: 0px;
+    height: 0px;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    border-bottom: 330px solid #1c4156;
+}
+.fireplace {
+    background-color: #d75f3d;
+    z-index: 1;
+    width: 15px;
+    height: 25px;
+    position: absolute;
+    top: -10px;
+    right: 30px;
+}
+.fireplace_top {
+    background-color: #fff;
+    z-index: 1;
+    width: 20px;
+    height: 5px;
+    position: absolute;
+    top: -15px;
+    right: 28px;
+}
+.fireplace_smoke {
+    z-index: 0;
+    height: 55px;
+    border-radius: 50%;
+    position: absolute;
+    -webkit-animation: smoke 1.25s infinite;
+    -moz-animation: smoke 1.25s infinite;
+    -ms-animation: smoke 1.25s infinite;
+    animation: smoke 1.25s infinite;
+}
+@-webkit-keyframes smoke {
+    0% {
+        background-color: rgba(255, 255, 255, 0.8);
+        top: -55px;
+        width: 20px;
+        right: 28px;
+    }
+    100% {
+        background-color: rgba(255, 255, 255, 0);
+        top: -140px;
+        width: 50px;
+        right: 10px;
+    }
+}
+@-moz-keyframes smoke {
+    0% {
+        background-color: rgba(255, 255, 255, 0.8);
+        top: -55px;
+        width: 20px;
+        right: 28px;
+    }
+    100% {
+        background-color: rgba(255, 255, 255, 0);
+        top: -140px;
+        width: 50px;
+        right: 10px;
+    }
+}
+@-ms-keyframes smoke {
+    0% {
+        background-color: rgba(255, 255, 255, 0.8);
+        top: -55px;
+        width: 20px;
+        right: 28px;
+    }
+    100% {
+        background-color: rgba(255, 255, 255, 0);
+        top: -140px;
+        width: 50px;
+        right: 10px;
+    }
+}
+@keyframes smoke {
+    0% {
+        background-color: rgba(255, 255, 255, 0.8);
+        top: -55px;
+        width: 20px;
+        right: 28px;
+    }
+    100% {
+        background-color: rgba(255, 255, 255, 0);
+        top: -140px;
+        width: 50px;
+        right: 10px;
+    }
+}
+@-webkit-keyframes light {
+    0% {
+        background-color: #f9eb32;
+    }
+    70% {
+        background-color: #f9ac32;
+    }
+    10% {
+        background-color: #f99032;
+    }
+}
+@-moz-keyframes light {
+    0% {
+        background-color: #f9eb32;
+    }
+    70% {
+        background-color: #f9ac32;
+    }
+    10% {
+        background-color: #f99032;
+    }
+}
+@-ms-keyframes light {
+    0% {
+        background-color: #f9eb32;
+    }
+    70% {
+        background-color: #f9ac32;
+    }
+    10% {
+        background-color: #f99032;
+    }
+}
+@keyframes light {
+    0% {
+        background-color: #f9eb32;
+    }
+    70% {
+        background-color: #f9ac32;
+    }
+    10% {
+        background-color: #f99032;
+    }
+}
+</style>
+</head>
+<body>
+<div align="center" class="contener_gener">
+    <div class="contener_home_one">
+        <div class="fireplace">&nbsp;</div>
+        <div class="fireplace_top">&nbsp;</div>
+        <div class="fireplace_smoke">&nbsp;</div>
+        <div class="triangle">&nbsp;</div>
+        <div class="parallelogram">&nbsp;</div>
+        <div class="door">&nbsp;</div>
+        <div class="window_one">&nbsp;</div>
+        <div class="window_two">&nbsp;</div>
+        <div class="home_base">&nbsp;</div>
+        <div class="christmas_tree">
+            <div style="position:relative; height:90px;">
+                <div class="christmas_ball christmas_ball_1">&nbsp;</div>
+                <div class="christmas_ball christmas_ball_2">&nbsp;</div>
+                <div class="christmas_ball christmas_ball_3">&nbsp;</div>
+                <div class="christmas_ball christmas_ball_4">&nbsp;</div>
+            </div>
+        </div>
+        <div class="christmas_tree" style="left:-90px;">
+            <div style="position:relative; height:90px;">
+                <div class="christmas_ball christmas_ball_1">&nbsp;</div>
+                <div class="christmas_ball christmas_ball_2">&nbsp;</div>
+                <div class="christmas_ball christmas_ball_3">&nbsp;</div>
+                <div class="christmas_ball christmas_ball_4">&nbsp;</div>
+            </div>
+        </div>
+        <div class="mountain_one">
+            <div class="sub_mountain_one">&nbsp;</div>
+        </div>
+        <div class="mountain_two">
+            <div class="sub_mountain_two">&nbsp;</div>
+        </div>
+    </div>
+    <div style="width:500px;height:9px;background-color:#ffffff; border-radius:5px;">&nbsp;</div>
+</div>
+</body>
+</html>
