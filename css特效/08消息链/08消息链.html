@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+<title>快递消息链</title>
+<style>
+  .kermit-tracklist ul li {
+       list-style: none;
+   }  
+
+   .kermit-trackrcol {
+       max-width: 900px;
+       border: 1px solid #eee;
+   }
+
+   .kermit-tracklist {
+       margin: 20px;
+       padding-left: 5px;
+       position: relative;
+   }
+
+       .kermit-tracklist li {
+           position: relative;
+           padding: 9px 0 0 25px;
+           line-height: 18px;
+           border-left: 1px solid #d9d9d9;
+           color: #999;
+       }
+
+           .kermit-tracklist li.first {
+               color: red;
+               padding-top: 0;
+               border-left-color: #fff;
+           }
+
+           .kermit-tracklist li .node-icon {
+               position: absolute;
+               left: -6px;
+               top: 50%;
+               width: 11px;
+               height: 11px;
+               background: url(order-icons.png) -21px -72px no-repeat;
+           }
+
+           .kermit-tracklist li.first .node-icon {
+               background-position: 0 -72px;
+           }
+
+           .kermit-tracklist li .time {
+               margin-right: 20px;
+               position: relative;
+               top: 4px;
+               display: inline-block;
+               vertical-align: middle;
+           }
+
+           .kermit-tracklist li .txt {
+               max-width: 600px;
+               position: relative;
+               top: 4px;
+               display: inline-block;
+               vertical-align: middle;
+           }
+
+           .kermit-tracklist li.first .time {
+               margin-right: 20px;
+           }
+
+           .kermit-tracklist li.first .txt {
+               max-width: 600px;
+           }
+           .kermitinfo{margin-top:10px;}
+           .kermitinfo a{color:blue;}
+</style>
+</head>
+<body>
+  <div class="kermit-trackrcol">
+    <div class="kermit-tracklist">
+        <ul>
+            <li class="first">
+                <i class="node-icon"></i>
+                <span class="time">2016-06-06 18:07:15</span>
+                <span class="txt">感谢您在kermit酱购物，欢迎您再次光临！</span>
+            </li>
+            <li>
+                <i class="node-icon"></i>
+                <span class="time">2016-06-06 17:57:23</span>
+                <span class="txt">配送员【Kermit酱】已出发，联系信息【微信公众号：kermit，感谢您的耐心等待，参加评价还能赢取K币呦】</span>
+            </li>
+            <li>
+                <i class="node-icon"></i>
+                <span class="time">2016-06-06 16:27:05</span>
+                <span class="txt">您的订单在中山分拨中心【kermit酱】站验货完成，正在分配送员</span>
+            </li>
+            <li>
+                <i class="node-icon"></i>
+                <span class="time">2016-06-06 01:07:50</span>
+                <span class="txt">您的订单已在kermit酱广州分拨中心发货完成，准备发往中山分拨中心</span>
+            </li>
+            <li>
+                <i class="node-icon"></i>
+                <span class="time">2016-06-05 10:07:15</span>
+                <span class="txt">您的订单已经进入kermit酱南京分拨中心，准备发往广州分拨中心</span>
+            </li>
+            <li>
+                <i class="node-icon"></i>
+                <span class="time">2016-06-05 8:00:05</span>
+                <span class="txt">您提交了订单，请等待kermit酱系统的确认</span>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
