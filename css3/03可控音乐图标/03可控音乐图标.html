@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+  <title>可控音乐图标</title>
+  <style>
+    div.kermitmusic {
+
+      animation: kermitrotate 2s linear infinite;
+      -webkit-animation: kermitrotate 2s linear infinite;
+      /*Safari and Chrome*/
+    }
+
+    .kermitrun {
+      width: 45px;
+      height: 45px;
+      margin: 2px;
+      background-image: url(music_note_big.png);
+    }
+
+    @keyframes kermitrotate {
+      from {
+        transform: rotate(0deg);
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        /* IE 9 */
+        -moz-transform: rotate(0deg);
+        /* Firefox */
+        -webkit-transform: rotate(0deg);
+        /* Safari 和 Chrome */
+        -o-transform: rotate(0deg);
+        /* Opera */
+      }
+
+      to {
+        transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        /* IE 9 */
+        -moz-transform: rotate(360deg);
+        /* Firefox */
+        -webkit-transform: rotate(360deg);
+        /* Safari 和 Chrome */
+        -o-transform: rotate(360deg);
+        /* Opera */
+      }
+    }
+
+    @-webkit-keyframes kermitrotate
+
+    /*Safari and Chrome*/
+      {
+      from {
+        transform: rotate(0deg);
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        /* IE 9 */
+        -moz-transform: rotate(0deg);
+        /* Firefox */
+        -webkit-transform: rotate(0deg);
+        /* Safari 和 Chrome */
+        -o-transform: rotate(0deg);
+        /* Opera */
+      }
+
+      to {
+        transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        /* IE 9 */
+        -moz-transform: rotate(360deg);
+        /* Firefox */
+        -webkit-transform: rotate(360deg);
+        /* Safari 和 Chrome */
+        -o-transform: rotate(360deg);
+        /* Opera */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="kermitmusic" class="kermitmusic kermitrun"></div>
+  <p>点击试试</p>
+  <script>
+    function kermitClick()
+    {
+       var kmtMusic= document.getElementById("kermitmusic");
+       var kmtClass = kmtMusic.className;
+       if (kmtClass != null && kmtClass.indexOf('kermitmusic') > -1) {
+           kmtMusic.className = kmtClass.replace('kermitmusic', '');
+       } else {
+           kmtMusic.className = kmtClass + ' kermitmusic';
+       }
+    }
+    addEventListener("click", kermitClick);
+</script>
+</body>
+
+</html>
