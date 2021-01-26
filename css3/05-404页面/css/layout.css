@@ -1,0 +1,246 @@
+
+
+/*--------404page01 start--------*/
+
+/*
+[
+    {"title": "模块标题","type":"color","name": "@mdtitle","value": "#ffffff"},
+    {"title": "底部背景","type":"color","name": "@bottombg","value": "#0068b7"},
+    {"title": "底部文本","type":"color","name": "@textbt","value": "#ffffff"},
+    {"title": "海鸥1","type":"image","name": "@haiouone","value": "url(/res/webimages/404_gull1.png)"},
+    {"title": "海鸥2","type":"image","name": "@twoho","value": "url(/res/webimages/404_gull2.png)"},
+    {"title": "四零四图标","type":"image","name": "@slsicon","value": "url(/res/webimages/404.png)"},
+    {"title": "浅色波浪","type":"image","name": "@qianline","value": "url(/res/webimages/404_wave_2.png)"},
+    {"title": "深色波浪","type":"image","name": "@shenbl","value": "url(/res/webimages/404_wave_1.png)"},
+    {"title": "运动元素","type":"image","name": "@animateicon","value": "url(/res/webimages/404_boat.png)"},
+    {"title": "返回官网按钮","type":"color","name": "@backcolor","value": "#0068b7"}
+]
+*/
+
+/*
+body{overflow-x:hidden;}
+html,body{height:100%;}
+.page404cont01{font-size:16px;width: 100%;height:100%;overflow: hidden;background-color: @mdtitle;position:relative;}
+
+.pa404ocean01 {background-color: @bottombg;display:inline-block;height: 30%;width:100%;position:absolute; z-index:0;bottom:0;left:0;}
+
+.logo{position: absolute;background-image: url(../webimages/logo_black.png);background-repeat:no-repeat;  width: 128px;height: 62px;margin-left: -64px;margin-top: -31px;left: 15%;top:5%;}
+
+.gull404page01{position: absolute;background-image: @haiouone; width: 85px;height: 41px;margin-right: -42px;margin-top: -20px;right: 30%;top:15%;}
+
+.gull404pg01{position: absolute;background-image: @twoho;background-repeat:no-repeat; width: 60px;height: 25px;margin-right: -30px;margin-top: 12px;right: 20%; top: 15%;}
+
+.pg404sorry01{position: absolute;height: 30px;margin-left: -207px;margin-top: -15px;left: 35%;top: 0;color:@textbt;font-size:30px;font-weight:bold;}
+
+.gull404icon01{position: absolute;background-image: @slsicon;background-repeat:no-repeat; width: 210px;height: 90px;margin-top: -45px;margin-left: -105px;left: 25%;top: 23%;}
+
+.gohome404pg01{position: absolute;width: 160px;height: 40px;bottom: 0;right: -200px;font-size:20px; color:@backcolor;border:1px solid @backcolor;border-radius:3px;text-align:center;line-height:40px;}
+.gohome404pg01:hover{color:#0068b7;}
+
+.wavebttom01 {background-image:@shenbl;background-repeat: no-repeat;position: absolute;top: -175px;left: 0;width: 4592px;height: 180px;animation: wavebttom01 12s cubic-bezier(0.35, 0.45, 0.65, 0.25) infinite;-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}
+.wavetop01{background-image: @qianline;background-repeat: repeat-x;position: absolute; top: -150px;left: 0;width:4592px;height: 180px;animation: wavebttom01 5s cubic-bezier(0.35, 0.45, 0.65, 0.25) infinite;-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}
+
+    @keyframes wavebttom01 {
+    0% {
+        transform: translate3D(0,0,0);
+    }
+    100% {
+        transform: translate3D(-2296px,0,0);
+    }
+}
+
+@-webkit-keyframes wavebttom01 {
+    0% {
+        -webkit-transform: translate3D(0,0,0);
+    }
+    100% {
+        -webkit-transform: translate3D(-2296px,0,0);
+    }
+}
+
+.pa404boat01{background-image: @animateicon; width: 69px;height: 105px;position: absolute;left:  -69px;top: 0;-webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); -webkit-transform-origin: 78% 100%;transform-origin: 78% 100%;}
+
+
+*/
+
+
+body{overflow-x:hidden;}
+html,body{height:100%;}
+.page404cont01{color:#333;font-size:16px;width: 100%;height:100%;overflow: hidden;background-color: #fff;position:relative;}
+
+.pa404ocean01 {background-color: #0068b7;display:inline-block;height: 30%;width:100%;position:absolute; z-index:0;bottom:0;left:0;}
+
+.logo{position: absolute;background-image: url(../webimages/logo_black.png);background-repeat:no-repeat; width: 128px;height: 62px;margin-left: -64px;margin-top: -31px;left: 15%;top:5%;}
+
+.gull404page01{position: absolute;background-image: url(../webimages/404_gull1.png) ;background-repeat:no-repeat;  width: 85px;height: 41px;margin-right: -42px;margin-top: -20px;right: 30%;top:15%;}
+
+.gull404pg01{position: absolute;background-image: url(../webimages/404_gull2.png);background-repeat:no-repeat; width: 60px;height: 25px;margin-right: -30px;margin-top: 12px;right: 20%; top: 15%;}
+
+.pg404sorry01{position: absolute;height: 30px;margin-left: -207px;margin-top: -15px;left: 35%;top: 0;color:#ffffff;font-size:30px;font-weight:bold;}
+
+.gull404icon01{position: absolute;background-image: url(../webimages/404.png);background-repeat:no-repeat; width: 210px;height: 90px;margin-top: -45px;margin-left: -105px;left: 25%;top: 23%;}
+
+.gohome404pg01{position: absolute;width: 160px;height: 40px;bottom: 0;right: -200px;font-size:20px; color:#0068b7;border:1px solid #0068b7;border-radius:3px;text-align:center;line-height:40px;}
+.gohome404pg01:hover{color:#0068b7;}
+
+.wavebttom01 {background-image: url(../webimages/404_wave_1.png);background-repeat: no-repeat;position: absolute;top: -175px;left: 0;width: 4592px;height: 180px;animation: wavebttom01 12s cubic-bezier(0.35, 0.45, 0.65, 0.25) infinite;-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}
+.wavetop01{background-image: url(../webimages/404_wave_2.png);background-repeat: repeat-x;position: absolute; top: -150px;left: 0;width:4592px;height: 180px;animation: wavebttom01 5s cubic-bezier(0.35, 0.45, 0.65, 0.25) infinite;-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}
+
+@keyframes wavebttom01 {
+    0% {
+        transform: translate3D(0,0,0);
+    }
+    100% {
+        transform: translate3D(-2296px,0,0);
+    }
+}
+
+@-webkit-keyframes wavebttom01 {
+    0% {
+        -webkit-transform: translate3D(0,0,0);
+    }
+    100% {
+        -webkit-transform: translate3D(-2296px,0,0);
+    }
+}
+
+.pa404boat01{background-image: url(../webimages/404_boat.png);width: 69px;height: 105px;position: absolute;left:  -69px;top: 0;-webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); -webkit-transform-origin: 78% 100%;transform-origin: 78% 100%;}
+
+
+
+@media (max-width: 960px){
+    .gull404page01,.gull404pg01,.gull404icon01,.pg404sorry01{ transform: scale(.5);}
+}
+
+@media (min-width: 768px){
+    
+}
+@media (min-width: 992px)
+{
+    
+}
+@media (min-width:1024px)
+{
+    
+}
+@media (min-width: 1199px) 
+{
+    
+}
+@media (max-width:319px)
+{
+    body{width:320px;}
+}
+
+/*--------404page01 end--------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
