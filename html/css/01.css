@@ -240,9 +240,10 @@ skewY(angle)	定义沿着 Y 轴的 2D 倾斜转换。
   transform: rotate(45deg);
 }
 
-2.[animation动画]
+2.[animation动画] ie10
 	object.style.animation="mymove 5s infinite"
 animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+           名称   时长      线性/ease     动前延迟  次数/infinite 方向alternate(往返) 动后填充forwards/both  阶段paused/running
 https://www.runoob.com/cssref/css3-pr-animation.html
 
 animation: rightTwo 8s linear infinite;
