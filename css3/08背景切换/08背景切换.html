@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+<title>背景切换</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="slider">
+    <ul class="clearfix">
+      <!-- $通过锚点切换图片,通过:target :not(:target)改变未/选中状态 -->
+      <li><a href="#bg1">图片切换1</a></li>
+      <li><a href="#bg2">图片切换2</a></li>
+      <li><a href="#bg3">图片切换3</a></li>
+      <li><a href="#bg4">图片切换4</a></li>
+      <li><a href="#bg5">图片切换5</a></li>
+    </ul>
+  </div>
+  <img src="images/bg1.jpg" alt="美图" class="bg slideLeft" id="bg1">
+  <img src="images/bg2.jpg" alt="美图" class="bg slideBottom" id="bg2">
+  <img src="images/bg3.jpg" alt="美图" class="bg zoomIn" id="bg3">
+  <img src="images/bg4.jpg" alt="美图" class="bg zoomOut" id="bg4">
+  <img src="images/bg5.jpg" alt="美图" class="bg rotate" id="bg5">
+</body>
+</html>
